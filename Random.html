@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Chatbot
+</title>
+<style>
+    table, th, td {
+      border:0px solid black;
+      text-align: center;
+    }
+    
+.centerv {
+  text-align: center;
+  color: maroon;
+}
+.center {
+  text-align: center;
+}
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 40px;
+}
+
+
+</style>
+</head>
+<script>
+  var sites = [
+      'g0.html',
+      'g1.html'
+  ];
+
+  function randomUrl() {
+      var i = parseInt(Math.random() * sites.length);
+      location.href = sites[i];
+  }
+</script>
+
+<body style="background-color:white;">  
+   <h1 class=" centerv">Welcome</h1> 
+  <div style="text-align:center">
+  <h2>Click on the button to go to the chatbot</h2>
+  <input type = "button" href="#" onclick="randomUrl();" value = "Click Me">
+</div>
+
+</body>
+</html>
